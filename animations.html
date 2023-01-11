@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and keyframes</title>
+    <style>
+        .container{
+            background-color: green;
+        }
+        .box{
+            background-color: red;
+            height: 100px;
+            margin: 100px;
+            position: relative;
+            animation-name: anand;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-delay: 3s;
+             */
+             /* animation-direction: reverse;
+             animation-fill-mode: forwards; */
+            /* animation shorthand */
+            /* animation : name duration timing-function delay interation count
+                 fill-mode */
+        }
+        /* @keyframes anand{
+            from{
+               width  : 200px
+            }
+            to{
+               width : 700px;
+            }
+        } */
+
+        @keyframes anand{
+            0%{
+             top : 0px;
+             left :0px; 
+            }
+            25%{
+                 top : 250px;
+                 left : 0px;
+            }
+            75%{
+                top : 250px;
+                left : 250px;
+            }
+            100%{
+               top : 0px;
+               left : 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>This is box</h1>
+        </div>
+    </div>
+</body>
+</html>
